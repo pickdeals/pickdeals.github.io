@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
+  <title>PickDeals | Home </title>
   <!-- Place favicon.ico in the `app/` directory -->
 
   <!-- Chrome for Android theme color -->
@@ -65,24 +65,34 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Toolbar -->
         <paper-toolbar id="drawerToolbar">
-          <span class="paper-font-title">Menu</span>
+          <span class="paper-font-title">Pickdeals</span>
         </paper-toolbar>
 
         <!-- Drawer Content -->
         <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
           <a data-route="home" href="/">
             <iron-icon icon="home"></iron-icon>
-            <span>Home</span>
+            <span>Deals</span>
           </a>
 
           <a data-route="users" href="/users">
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>Coupons</span>
           </a>
 
           <a data-route="contact" href="/contact">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+            <iron-icon icon="docs"></iron-icon>
+            <span>Browse</span>
+          </a>
+		  
+		   <a data-route="contact" href="/contact">
+            <iron-icon icon="source"></iron-icon>
+            <span>Forum</span>
+          </a>
+		  
+		   <a data-route="contact" href="/contact">
+            <iron-icon icon="demo"></iron-icon>
+            <span>More</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -101,12 +111,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">Pickdelas</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">The future of the web today</div>
+            <div class="bottom-title paper-font-subhead">Connecting to amazing deals</div>
           </div>
 
         </paper-toolbar>
