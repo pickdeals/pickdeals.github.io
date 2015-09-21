@@ -48,6 +48,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  
+		  
+<link rel="import" href="bower_components/topeka-elements/category-images.html">
+<link rel="import" href="bower_components/core-icon/core-icon.html">
+<link rel="import" href="bower_components/core-icons/core-icons.html">
+<link rel="import" href="bower_components/core-icons/av-icons.html">
+<link rel="import" href="bower_components/paper-fab/paper-fab.html">
   <!-- endbuild -->
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
@@ -125,6 +132,78 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
+<polymer-element name="my-element">
+
+  <template>
+    <style>    
+      :host {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #section {
+        box-sizing: border-box;
+        width: 420px;
+        height: 582px;
+        left: 190px;
+        top: 0px;
+        position: absolute;
+      }
+      #section1 {
+        background-color: rgb(255, 255, 141);
+      }
+      #core_icon {
+        height: 256px;
+        width: 256px;
+        z-index: 100;
+      }
+      #div {
+        box-sizing: border-box;
+        position: relative;
+        height: 80px;
+        padding: 24px;
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        background-color: rgb(255, 235, 59);
+      }
+      #div2 {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        bottom: 50px;
+        right: 24px;
+      }
+      #paper_fab {
+        background-color: rgb(255, 64, 129);
+      }
+    </style>
+    <section id="section" layout vertical>
+      <section id="section1" class="top" flex layout horizontal center center-justified hero hero-id="top">
+        <core-icon icon="category-images:knowledge" id="core_icon" cross-fade-delayed designmeta="topeka-image"></core-icon>
+      </section>
+      <div id="div" class="bottom" hero hero-id="bottom">
+        <span id="span">General Knowledge</span>
+      </div>
+      <div id="div1" hero class="dummy"></div>
+      <div id="div2" class="fab fab-0">
+        <paper-fab icon="av:play-arrow" id="paper_fab" cross-fade-delayed></paper-fab>
+      </div>
+    </section>
+  </template>
+
+  <script>
+
+    Polymer({
+      
+    });
+
+  </script>
+
+</polymer-element>
+		  
+		  
+		  
+		  
             <section data-route="home">
               <paper-material elevation="1">
                 <my-greeting></my-greeting>
